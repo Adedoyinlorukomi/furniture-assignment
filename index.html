@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <link href="output.css" rel="stylesheet">
+    <link href="input.css" rel="stylesheet">
+    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+    <div class="flex justify-around py-6 xs:flex-col xs:gap-6">
+        <div class="text-3xl text-blue-950 font-bold xs:text-xl">Furniture</div>
+        <div class="flex flex-row justify-between grow-[0.2]">
+            <a href="#" class="link">Home</a>
+            <a href="#" class="link">Services</a>
+            <a href="#" class="link">Doctors</a>
+            <a href="#" class="link">Products</a>
+            <a href="#" class="link">Category</a>
+        </div>
+    </div>
+        <div class="relative">
+            <img src="./images/banner.png" alt="banner" class="w-full h-[500px] relative xs:h-[600px] xs:w-[200px]">
+            <div class="absolute w-[603px] h-[421px] top-[51px] right-[20px] bg-blue-1000 pl-12 py-10
+             xs:w-[300px] xs:h-[540px]">
+                <p class="tracking-widest font-bold text-sm">New Arrival</p>
+                <p class="font-black text-blue-950 text-5xl w-3/4 py-6">Discover Our New Collection</p>
+                <p class="font-bold text-base text-stone-950 leading-8 pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Quaerat suscipit in sed quae nulla incidunt quas hic labore, dolorum a!
+                </p>
+                <button class="bg-blue-1050 py-3 px-7 rounded-rad border-blue-1050 text-white text-xs">BUY NOW</button>
+            </div>
+        </div>
+        <div class="flex justify-around p-7 bg-slate-950 xs:flex xs:flex-col xs:gap-6">
+            <div class="flex gap-6">
+                <img src="./images/car.svg">
+                <div class="flex flex-col gap-2.5">
+                    <p class="font-semibold text-xl text-stone-950 leading-non">Free Delivery</p>
+                    <p class="text-xs w-[180px]">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="flex gap-6">
+                <img src="./images/24.svg">
+                <div class="flex flex-col gap-2.5">
+                    <p class="font-semibold text-xl text-stone-950 leading-non">Support 24/7</p>
+                    <p class="text-xs w-[180px] text-stone-950">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="flex gap-6">
+                <img src="./images/authentic.svg">
+                <div class="flex flex-col gap-2.5">
+                    <p class="font-semibold text-xl text-stone-950 leading-non">100% Authentic</p>
+                    <p class="text-xs w-[180px]">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-7 text-center">
+            <p class="font-black text-3xl">Inspiration Collection</p><br>
+            <h5 class="font-medium text-stone-950">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+        </div>
+
+        <div class="flex justify-center p-12 gap-3 xs:flex-col rp:gap-2">
+            <img src="./images/interior2.png" class="rounded-tl-rad">
+            <img src="./images/interior1.png" class="relative bottom-5 xs:bottom-0">
+            <img src="./images/Rectangle.png" class=" w-[355px] h-[443px] rounded-br-rad">
+            <img src="./images/lamp.png" class="absolute right-[242px] top-[883px] xs:invisible">
+        </div>
+
+        <div class="relative flex py-14 px-36 bg-cyan-1000 xs:px-0">
+            <div class="w-full">
+                <p class="text-stone-950 font-extrabold text-3xl">Beautify Your Space</p>
+                <p class="text-stone-1000 w-[350px] leading-6 tracking-wide p-7">Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris.</p>
+                <button class="bg-blue-1050 py-3 px-7 rounded-rad border-blue-1050 text-white text-xs">LEARN MORE</button>
+            </div>
+            <div class="img">
+                <img src="./images/hatwoman.png" class="relative z-20 rounded-tl-rad rounded-br-rad rounded-tr-large
+                rounded-bl-large xs:invisible">
+                <img src="./images/Ellipse.png" class="absolute top-[227px] right-[64px]
+                    z-10 xs:invisible">
+            </div>
+           
+        </div>
+        <div class="p-7 text-center">
+            <p class="font-black text-3xl">Browse The Range</p><br>
+            <h5 class="font-medium text-stone-950">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+        </div>
+        <div class="pb-8 border-b-2 border-solid border-slate-1000 rp:pb-5">
+            <div class="flex justify-center gap-3 xs:flex-col">
+                <img src="./images/dining.png" class="designA">
+                <img src="./images/living.png" class="designB">
+                <img src="./images/bedroom.png" class="designC">
+            </div>
+            <div class="flex justify-center mt-[20px] mb-[50px] gap-80 text-stone-950 
+            text-lg font-extrabold xs:flex-col  xs:gap-2">
+                <p>Dining</p>
+                <p>Living</p>
+                <p>Bedroom</p>
+            </div>
+        </div>
+
+        <div class="relative pb-14">
+        <div class="p-7 text-center">
+            <p class="font-black text-3xl">How It Works</p><br>
+            <h5 class="font-medium text-stone-950">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+        </div>
+           <div class="flex justify-center gap-3 xs:flex-col">
+            <img src="./images/interiorA.png" class="designA">
+            <img src="./images/interiorB.png" class="designB">
+            <img src="./images/interiorC.png" class="designC">
+           </div>
+           <div class="flex justify-center mt-[-40px]">
+            <div class= "absolute flex gap-[302px] bottom-[-19px] xs:invisible">
+                <img src="./images/Ellipse white.png">
+                <img src="./images/Ellipse white.png" >
+                <img src="./images/Ellipse white.png" >
+            </div>
+            <div class="absolute flex gap-[332px] bottom-[-5px] xs:invisible">
+                <img src="./images/Ellipse black.png" >
+                <img src="./images/Ellipse black.png" >
+                <img src="./images/Ellipse black.png" >
+            </div>
+            <div class="flex gap-[370px] absolute bottom-[3px] text-white text-3xl xs:invisible">
+                <b>1.</b>
+                <b>2.</b>
+                <b>3.</b>
+            </div>
+        </div>
+           </div>
+           <div class="flex mt-[20px] pl-8 text-center pb-[130px] xs:pt-12">
+            <div class="center">
+                <p class="inspo2">Purchase Securely</p><br>
+                <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+            </div>
+            <div class="center">
+                <p class="inspo2">Ships from Warehouse</p><br>
+                <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+            </div>
+            <div class="center">
+                <p class="inspo2">Style Your Room</p><br>
+                <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+            </div>
+           </div>
+           
+        
+        <div class="relative bg-slate-950 text-center h-[363px]">
+            <h2 class="pt-12 rp:pt-9 text-stone-1000 font-black text-3xl">Join Our Mailing List</h2>
+            <h4 class="text-xl">Sign up to receive inspiration, product updates, <br>and special offers from our team.</h4>
+                <form class="p-6" action="email">
+                    <input class=" w-[270px] h-[40.5px] border-1 border-solid border-blue-1050" type="email" placeholder="example@gmail.com">
+                    <button class=" h-[43.5px] w-[77px] text-white ml-[-8px] bg-blue-1050 border-blue-1050">Submit</button>
+                </form>
+        </div>
+        <div class="instagram">
+            <div class="care">
+                <p class="beauty-care">Beauty Care</p>
+                <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fugit ratione aspernatur iusto praesentium veritatis voluptatibus aut quis quod quidem nam.
+                </div>
+                <div class="follow">Follow Us</div>
+            </div>
+            <div class="shop">
+                <div class="shop-text">Instagram Shop</div>
+                <div class="shop-image">
+                    <img src="./images/ig1.png" class="shop1">
+                    <img src="./images/ig2.png" class="shop2">
+                    <img src="./images/ig3.png" class="shop3">
+                    <img src="./images/ig4.png" class="shop4">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
