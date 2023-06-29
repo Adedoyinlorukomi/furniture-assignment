@@ -820,8 +820,8 @@ video {
   height: 443px;
 }
 
-.h-\[500px\] {
-  height: 500px;
+.h-\[600px\] {
+  height: 600px;
 }
 
 .w-3\/4 {
@@ -1704,6 +1704,14 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-rad {
   border-radius: 70px;
 }
@@ -2121,6 +2129,10 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-\[\'Montserrat\'\] {
+  font-family: 'Montserrat';
 }
 
 .text-3xl {
@@ -2608,6 +2620,128 @@ video {
   content: var(--tw-content);
 }
 
+*{
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.link{
+  text-decoration: none;
+  color: #333333;
+}
+
+@media screen and (max-width: 428px) {
+  *{
+    margin: 0;
+  }
+
+  .link {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .instagram{
+    background-color: white;
+    height: 920px;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    gap: 50px;
+    padding-top: 40px;
+  }
+
+  .shop-image{
+    flex-direction: column;
+  }
+
+  .beauty-care, .follow{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.4mm;
+  }
+
+  .shop-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 50px;
+    color: #FFFFFF;
+  }
+
+  .lorem{
+    padding: 20px 0;
+  }
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+}
+
+.inspo2{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#h5{
+  font-style: italic;
+  width: 80%;
+}
+
+/**beauty and instagram**/
+
+.instagram{
+  background-color: #03344F;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 10px;
+  padding: 40px 0 20px 0;
+}
+
+.shop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.care{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  padding-left: 98px;
+}
+
+.beauty-care, .follow{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.2mm;
+}
+
+.lorem{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  opacity: 50%;
+}
+
+.shop-text{
+  align-self: start;
+  position: relative;
+  left: 61px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.shop-image{
+  display: flex;
+  gap: 14px;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2630,17 +2764,17 @@ video {
   text-align: center;
 }
 
-@media (max-width: 490px) {
-  .xs\:invisible {
-    visibility: hidden;
-  }
-
+@media (max-width: 428px) {
   .xs\:bottom-0 {
     bottom: 0px;
   }
 
   .xs\:flex {
     display: flex;
+  }
+
+  .xs\:hidden {
+    display: none;
   }
 
   .xs\:h-\[540px\] {
@@ -2651,20 +2785,20 @@ video {
     height: 600px;
   }
 
-  .xs\:w-\[200px\] {
-    width: 200px;
-  }
-
   .xs\:w-\[300px\] {
     width: 300px;
+  }
+
+  .xs\:w-\[420px\] {
+    width: 420px;
   }
 
   .xs\:flex-col {
     flex-direction: column;
   }
 
-  .xs\:gap-2 {
-    gap: 0.5rem;
+  .xs\:gap-5 {
+    gap: 1.25rem;
   }
 
   .xs\:gap-6 {
@@ -2678,6 +2812,20 @@ video {
 
   .xs\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .xs\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xs\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .xs\:text-xl {

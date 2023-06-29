@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xs': {'max': '490px'}
+      'xs': {'max': '428px'}
     },
     borderRadius: {
       'none': '0',

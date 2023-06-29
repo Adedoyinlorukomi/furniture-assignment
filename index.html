@@ -6,13 +6,13 @@
     <title>Furniture</title>
     <link href="output.css" rel="stylesheet">
     <link href="input.css" rel="stylesheet">
-    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
+    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
+    <div class="font-['Montserrat']">
     <div class="flex justify-around py-6 xs:flex-col xs:gap-6">
         <div class="text-3xl text-blue-950 font-bold xs:text-xl">Furniture</div>
         <div class="flex flex-row justify-between grow-[0.2]">
@@ -24,15 +24,15 @@
         </div>
     </div>
         <div class="relative">
-            <img src="./images/banner.png" alt="banner" class="w-full h-[500px] relative xs:h-[600px] xs:w-[200px]">
+            <img src="./images/banner.png" alt="banner" class="w-full h-[600px] relative xs:h-[600px] xs:w-[420px]">
             <div class="absolute w-[603px] h-[421px] top-[51px] right-[20px] bg-blue-1000 pl-12 py-10
              xs:w-[300px] xs:h-[540px]">
                 <p class="tracking-widest font-bold text-sm">New Arrival</p>
-                <p class="font-black text-blue-950 text-5xl w-3/4 py-6">Discover Our New Collection</p>
-                <p class="font-bold text-base text-stone-950 leading-8 pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                <p class="font-black text-blue-950 text-5xl w-3/4 py-6 xs:text-4xl">Discover Our New Collection</p>
+                <p class="font-bold text-base text-stone-950 leading-8 pb-5 xs:text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                  Quaerat suscipit in sed quae nulla incidunt quas hic labore, dolorum a!
                 </p>
-                <button class="bg-blue-1050 py-3 px-7 rounded-rad border-blue-1050 text-white text-xs">BUY NOW</button>
+                <button class="bg-blue-1050 py-3 px-7 rounded-rad border-blue-1050 text-white text-xs xs:text-[10px]">BUY NOW</button>
             </div>
         </div>
         <div class="flex justify-around p-7 bg-slate-950 xs:flex xs:flex-col xs:gap-6">
@@ -52,7 +52,7 @@
             </div>
             <div class="flex gap-6">
                 <img src="./images/authentic.svg">
-                <div class="flex flex-col gap-2.5">
+                <div class="flex flex-col gap-3 xs:gap-5">
                     <p class="font-semibold text-xl text-stone-950 leading-non">100% Authentic</p>
                     <p class="text-xs w-[180px]">Lorem ipsum dolor sit amet.</p>
                 </div>
@@ -68,7 +68,7 @@
             <img src="./images/interior2.png" class="rounded-tl-rad">
             <img src="./images/interior1.png" class="relative bottom-5 xs:bottom-0">
             <img src="./images/Rectangle.png" class=" w-[355px] h-[443px] rounded-br-rad">
-            <img src="./images/lamp.png" class="absolute right-[242px] top-[883px] xs:invisible">
+            <img src="./images/lamp.png" class="absolute right-[242px] top-[883px] xs:hidden">
         </div>
 
         <div class="relative flex py-14 px-36 bg-cyan-1000 xs:px-0">
@@ -80,9 +80,9 @@
             </div>
             <div class="img">
                 <img src="./images/hatwoman.png" class="relative z-20 rounded-tl-rad rounded-br-rad rounded-tr-large
-                rounded-bl-large xs:invisible">
+                rounded-bl-large xs:hidden">
                 <img src="./images/Ellipse.png" class="absolute top-[227px] right-[64px]
-                    z-10 xs:invisible">
+                    z-10 xs:hidden">
             </div>
            
         </div>
@@ -92,12 +92,15 @@
         </div>
         <div class="pb-8 border-b-2 border-solid border-slate-1000 rp:pb-5">
             <div class="flex justify-center gap-3 xs:flex-col">
+                <p class="hidden xs:flex">&nbsp;&nbsp;(1.) &nbsp;Dining</p>
                 <img src="./images/dining.png" class="designA">
+                <p class="hidden xs:flex">&nbsp;&nbsp;(2.) &nbsp;Living</p>
                 <img src="./images/living.png" class="designB">
+                <p class="hidden xs:flex">&nbsp;&nbsp;(3.) &nbsp;Bedroom</p>
                 <img src="./images/bedroom.png" class="designC">
             </div>
             <div class="flex justify-center mt-[20px] mb-[50px] gap-80 text-stone-950 
-            text-lg font-extrabold xs:flex-col  xs:gap-2">
+            text-lg font-extrabold xs:hidden">
                 <p>Dining</p>
                 <p>Living</p>
                 <p>Bedroom</p>
@@ -110,22 +113,34 @@
             <h5 class="font-medium text-stone-950">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
         </div>
            <div class="flex justify-center gap-3 xs:flex-col">
+            <div class="hidden xs:flex flex-col">
+                <p class="inspo2">&nbsp;&nbsp;(1.) &nbsp;Purchase Securely</p><br>
+                <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+            </div>
             <img src="./images/interiorA.png" class="designA">
+            <div class="hidden xs:flex flex-col">
+                <p class="inspo2">&nbsp;&nbsp;(2.) &nbsp;Ships from Warehouse</p><br>
+                <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+            </div>
             <img src="./images/interiorB.png" class="designB">
+            <div class="hidden xs:flex flex-col">
+                <p class="inspo2">&nbsp;&nbsp;(3.) &nbsp;Style Your Room</p><br>
+                <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
+            </div>
             <img src="./images/interiorC.png" class="designC">
            </div>
            <div class="flex justify-center mt-[-40px]">
-            <div class= "absolute flex gap-[302px] bottom-[-19px] xs:invisible">
+            <div class= "absolute flex gap-[302px] bottom-[-19px] xs:hidden">
                 <img src="./images/Ellipse white.png">
                 <img src="./images/Ellipse white.png" >
                 <img src="./images/Ellipse white.png" >
             </div>
-            <div class="absolute flex gap-[332px] bottom-[-5px] xs:invisible">
+            <div class="absolute flex gap-[332px] bottom-[-5px] xs:hidden">
                 <img src="./images/Ellipse black.png" >
                 <img src="./images/Ellipse black.png" >
                 <img src="./images/Ellipse black.png" >
             </div>
-            <div class="flex gap-[370px] absolute bottom-[3px] text-white text-3xl xs:invisible">
+            <div class="flex gap-[370px] absolute bottom-[3px] text-white text-3xl xs:hidden">
                 <b>1.</b>
                 <b>2.</b>
                 <b>3.</b>
@@ -133,15 +148,15 @@
         </div>
            </div>
            <div class="flex mt-[20px] pl-8 text-center pb-[130px] xs:pt-12">
-            <div class="center">
+            <div class="xs:hidden">
                 <p class="inspo2">Purchase Securely</p><br>
                 <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
             </div>
-            <div class="center">
+            <div class="xs:hidden">
                 <p class="inspo2">Ships from Warehouse</p><br>
                 <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
             </div>
-            <div class="center">
+            <div class="xs:hidden">
                 <p class="inspo2">Style Your Room</p><br>
                 <h5 id="h5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h5>
             </div>
@@ -158,11 +173,23 @@
         </div>
         <div class="instagram">
             <div class="care">
-                <p class="beauty-care">Beauty Care</p>
-                <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <div class="flex flex-col gap-3">
+                    <p class="beauty-care">Beauty Care</p>
+                    <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Fugit ratione aspernatur iusto praesentium veritatis voluptatibus aut quis quod quidem nam.
+                    </div>
                 </div>
-                <div class="follow">Follow Us</div>
+                <div class="flex flex-col gap-3">
+                    <div class="follow">Follow Us</div>
+                    <div class="flex gap-2 xs:flex-col">
+                        <a href="https://twitter.com/doyinlorukomi"><img src="./images/twitter-white.svg" alt="twitter"></a>
+                        <a href="http://instagram.com/adedoyinlorukomi"><img src="./images/IG-white.svg" alt="ig"></a>
+                        <a href="http://discordapp.com/users/Adedoyin#1757"><img src="./images/discord-white.svg" alt="discord"></a>
+                        <a href="https://github.com/Adedoyinlorukomi"><img src="./images/git.svg" alt="github"></a>
+                        <a href="https://www.linkedin.com/in/adedoyin-deborah-952b3b253"><img src="./images/linkedin.png" alt="" width="24px" height="24px" class="rounded-lg"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100076495167407"><img src="./images/fb.png" alt="facebook" width="24px" height="24px" class="rounded-full"></a>
+                    </div>
+                </div>
             </div>
             <div class="shop">
                 <div class="shop-text">Instagram Shop</div>
