@@ -14,6 +14,15 @@
     text-decoration: none; 
     color: #333333;
 }
+.link:hover {
+    background-color: #03344F;
+    padding: 5px 10px;
+    color: #ffffff; transform: rotate(360deg); border-radius: 9px;
+    transition: ease-in; transition-duration: 0.4s;
+       }
+#arrival:hover{
+    border: 0.6px dashed #03344F;
+}
 
 @media screen and (max-width: 428px) {
     *{
